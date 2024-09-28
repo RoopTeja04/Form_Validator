@@ -1,0 +1,213 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.App {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.App::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://img.freepik.com/free-photo/digital-art-beautiful-mountains_23-2151123686.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px);
+  z-index: 1; 
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  position: relative; 
+  z-index: 2; 
+  padding: 20px;
+  border-radius: 10px; 
+}
+
+.input-field {
+  position: relative;
+  margin-top: 3%;
+}
+
+.input-field .text {
+  width: 550px;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px 15px 0 15px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  outline: none;
+  color: #fff; 
+}
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  pointer-events: none;
+  transition: .3s;
+  color: #fff; 
+}
+
+.text:focus {
+  border-bottom: 4px solid #07a154;
+  outline: none;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: 0;
+  font-size: 14px;
+  padding: 0 10px;
+  background: none;
+}
+
+.submit-btn {
+  height: 7vh;
+  width: 15%;
+  font-size: 22px;
+  margin: 55px 0 0 0;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s linear;
+  background-color: #07a154;
+  color: #fff; 
+}
+
+.submit-btn:hover {
+  background-color: rgb(41, 205, 20);
+  color: black;
+  font-weight: 600;
+}
+
+.success {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.close {
+  background: none;
+  color: black;
+  border: none;
+  font-size: 20px;
+  font-weight: 800;
+  position: relative;
+  cursor: pointer;
+}
+
+.sucess-data {
+  margin-left: 10px;
+  text-align: center;
+  font-size: 17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 0 2%;
+  position: relative; 
+  z-index: 2; 
+  padding: 10px; 
+  border-radius: 5px;
+}
+
+.navbar-tabs {
+  display: flex;
+  flex-direction: row;
+  margin: 25px 0 0 20%;
+}
+
+.tabs {
+  margin-left: 45%;
+  font-size: 17px;
+  font-weight: 100;
+  color: #fff; 
+  cursor: pointer;
+}
+
+.navbar-log {
+  margin: 32px 0 0 37%;
+  width: 10%;
+  height: 6vh;
+  font-size: 17px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: black; 
+  color: #fff; 
+  border: none; 
+  transition: 0.2s linear; 
+}
+
+.navbar-log:hover {
+  background-color: rgb(33, 167, 15); 
+}
+
+.input {
+  display: flex;
+}
+
+.input-s {
+  margin-left: 5px;
+  position: relative;
+}
+
+.input-s .text {
+  width: 255px;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px 15px 0 15px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  outline: none;
+  color: #fff; 
+}
+
+.input-s label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  pointer-events: none;
+  transition: .3s;
+  color: #fff; 
+}
+
+.text:focus {
+  border-bottom: 4px solid #07a154;
+  outline: none;
+}
